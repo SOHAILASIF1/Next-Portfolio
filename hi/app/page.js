@@ -1,12 +1,13 @@
 "use client"
+import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter'
 
 
 export default function Home() {
   return (
     <>
-      <div className=" container   bg-linear-to-r from-red-500 via-orange-500 to-yellow-500 h-[100vh]">
-        <div className="w-[50%] h-[100vh] flex items-center justify-center ">
+      <div className=" container flex items-center justify-between px-20   bg-linear-to-r from-red-500 via-orange-500 to-yellow-500 h-[100vh]">
+        <div className="w-[50%] `h-[100vh]` flex items-center justify-center ">
           <div className="text-center space-y-4">
 
             <h1 className="text-5xl font-extrabold text-red-900 leading-tight">
@@ -38,7 +39,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=''>
+        <div className='flex items-center justify-center'>
+         <Image
+      src="/Img.jpg.jpg"
+      alt="Hero image"
+      width={500}
+      height={300}
+    />
           
 
         </div>
