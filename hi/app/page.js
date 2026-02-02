@@ -29,7 +29,7 @@ export default function Home() {
                   cursor
                   cursorStyle="|"
                   typeSpeed={80}
-                  deleteSpeed={50}
+                  deleteSpeed={40}
                   delaySpeed={1500}
                 />
               </span>
