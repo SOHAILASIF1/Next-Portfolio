@@ -11,7 +11,7 @@ export default function Home() {
           <div className="text-center space-y-4">
 
             <h1 className="text-5xl font-extrabold text-red-900 leading-tight">
-              Hey, I’m{' '}
+              Hey, I’am{' '}
               <span className="text-red-950 underline decoration-red-600">
                 Sohail Asif
               </span>
@@ -41,7 +41,7 @@ export default function Home() {
 
         <div className='flex items-center justify-center'>
          <Image
-      src="/Img.jpg.jpg"
+      src="/Img.png"
       alt="Hero image"
       width={500}
       height={300}
