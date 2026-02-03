@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <nav className=' container  text-white flex items-center justify-between h-20 border-b-4  bg-linear-to-r from-red-500 via-orange-500 to-yellow-500 px-20'>
+    <nav className=' container  text-white flex items-center justify-between h-20 border-b-4   px-20'>
         <div className=' logo text-white '>
             <h3 className='font-bold text-xl'  >MyPortfolio</h3>
           

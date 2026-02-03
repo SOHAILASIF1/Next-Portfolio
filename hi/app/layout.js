@@ -1,14 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Creepster } from "next/font/google";
 import "./globals.css";
 import Navbar from "./component/navbar/page";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const creepster = Creepster({
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -19,13 +14,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="min-h-screen ">
-   
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased   min-h-screen bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500`}
+        className={`
+          ${creepster.className}
+          min-h-screen
+          bg-gradient-to-br from-black via-red-950 to-black
+          text-red-100
+          antialiased
+        `}
       >
-        {/* 👇 CONTENT CONTAINER ONLY */}
-        <div className="" >
+        {/* Dark overlay for depth */}
+        <div className="min-h-screen bg-[radial-gradient(circle_at_top,rgba(255,0,0,0.15),transparent_60%)]">
           <Navbar />
           {children}
         </div>
