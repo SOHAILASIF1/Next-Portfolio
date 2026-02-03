@@ -3,14 +3,14 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <nav className=' container flex items-center justify-between h-20 border-b-2  bg-linear-to-r from-red-500 via-orange-500 to-yellow-500 px-20'>
-        <div className=' logo color-white '>
+    <nav className=' container  text-white flex items-center justify-between h-20 border-b-4  bg-linear-to-r from-red-500 via-orange-500 to-yellow-500 px-20'>
+        <div className=' logo text-white '>
             <h3 className='font-bold text-xl'  >MyPortfolio</h3>
           
 
         </div>
         <div id="links" className='flex  items-center justify-between'>
-          <ul className='flex  items-center justify-between gap-5 text-2xl '>
+          <ul className='flex  items-center justify-between gap-8 text-2xl '>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/project">Project</Link></li>
