@@ -47,7 +47,7 @@ export default function Home() {
         {/* Image Section */}
         <div className="w-full lg:w-1/2 flex items-center justify-center mb-10 lg:mb-0">
           <Image
-            src="/Img.png"
+            src="/sohail.png"
             alt="Sohail Asif"
             width={450}
             height={450}

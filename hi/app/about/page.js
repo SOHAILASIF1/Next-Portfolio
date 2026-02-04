@@ -9,7 +9,7 @@ function About() {
     <div className='h-screen flex items-center justify-between p-20 '>
        <div className="w-[50%] flex items-center justify-center">
         <Image
-          src="/Img.png"
+          src="/sohail.png"
           alt="Sohail Asif"
           width={450}
           height={450}
