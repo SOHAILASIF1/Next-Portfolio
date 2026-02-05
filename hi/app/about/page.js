@@ -9,6 +9,7 @@ function About() {
       <h1 className="text-6xl text-red-600 text-center my-12 tracking-widest font-bold">
         MY INFO
       </h1>
+      <div>
 
       <div className="min-h-screen flex items-center px-20 gap-10">
         
@@ -56,6 +57,12 @@ function About() {
             DOWNLOAD RESUME
           </a>
         </div>
+      </div>
+      <div className="px-20">
+        <Heading title={"Experience"}/>
+       
+
+      </div>
       </div>
     </>
   );
