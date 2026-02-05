@@ -20,7 +20,7 @@ export default function Home() {
             </h1>
 
             <h2 className="text-2xl lg:text-4xl text-gray-200">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-400 to-gray-300 drop-shadow-[0_0_10px_rgba(255,0,0,0.6)]">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-red-600 via-red-400 to-gray-300 drop-shadow-[0_0_10px_rgba(255,0,0,0.6)]">
                 <Typewriter
                   words={[
                     "a Frontend Developer",
