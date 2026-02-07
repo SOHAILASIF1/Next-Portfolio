@@ -1,2 +1,44 @@
 @import "tailwindcss";
 
+/* Horror background animations */
+
+/* HORROR BACKGROUND ANIMATIONS */
+
+@keyframes slowPulse {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
+@keyframes fogDrift {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-5%) translateY(-2%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/* reusable classes */
+.horror-fog {
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 0, 0, 0.25),
+    transparent 70%
+  );
+  animation: fogDrift 30s ease-in-out infinite;
+}
+
+.horror-pulse {
+  background: rgba(120, 0, 0, 0.3);
+  animation: slowPulse 5s infinite;
+}
