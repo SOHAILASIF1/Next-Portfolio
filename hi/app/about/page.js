@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Heading from "../component/Heading";
 import Experience from "../component/Experience";
+import Skill from "../component/Skill";
 
 function About() {
   return (
@@ -72,7 +73,13 @@ function About() {
             <Experience tittle={"Intermediate"} timePeriod={"2017 - 2019"} discription={"New Life Public High School Kunri."} />
           </div>
           <Heading title={"Skills"} />
-          
+          <div className="w-1/2 px-20 flex gap-4">
+          <Skill/>
+
+
+
+          </div>
+
 
 
         </div>
