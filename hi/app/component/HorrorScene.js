@@ -3,7 +3,6 @@
 import { Canvas, useFrame } from "@react-three/fiber"
 import { OrbitControls, Float, Environment } from "@react-three/drei"
 import { useRef } from "react"
-import * as THREE from "three"
 
 function FlickeringLight() {
   const lightRef = useRef()
@@ -30,8 +29,10 @@ function Ghost() {
 
   useFrame(({ clock }) => {
     const t = clock.getElapsedTime()
-    meshRef.current.position.y = Math.sin(t) * 0.5 + 1
-    meshRef.current.rotation.y += 0.01
+    if (meshRef.current) {
+      meshRef.current.position.y = Math.sin(t) * 0.5 + 1
+      meshRef.current.rotation.y += 0.01
+    }
   })
 
   return (
@@ -50,21 +51,24 @@ function Ghost() {
 
 export default function HorrorScene() {
   return (
-    <Canvas
-      camera={{ position: [0, 2, 6] }}
-      style={{ height: "100vh", background: "black" }}
-    >
-      <fog attach="fog" args={["black", 5, 15]} />
-      
-      <ambientLight intensity={0.2} />
-      <FlickeringLight />
+    <div className="fixed inset-0 -z-20">
+      <Canvas
+        camera={{ position: [0, 2, 6] }}
+        style={{ height: "100vh", pointerEvents: "none" }}
+      >
+        <color attach="background" args={["black"]} />
+        <fog attach="fog" args={["black", 5, 15]} />
 
-      <Float speed={2} rotationIntensity={1} floatIntensity={2}>
-        <Ghost />
-      </Float>
+        <ambientLight intensity={0.2} />
+        <FlickeringLight />
 
-      <OrbitControls enableZoom={false} />
-      <Environment preset="night" />
-    </Canvas>
+        <Float speed={2} rotationIntensity={1} floatIntensity={2}>
+          <Ghost />
+        </Float>
+
+        <OrbitControls enableZoom={false} />
+        <Environment preset="night" />
+      </Canvas>
+    </div>
   )
 }
