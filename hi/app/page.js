@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-black via-red-950 to-black">
+    <section className="min-h-screen ">
       <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-between min-h-screen">
 
         {/* Text Section */}
