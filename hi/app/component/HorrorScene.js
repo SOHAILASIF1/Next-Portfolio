@@ -63,7 +63,7 @@ function EvilGhost() {
       <sphereGeometry args={[1.2, 64, 64]} />
       <meshStandardMaterial
         color="#111"
-        emissive="red"
+        emissive="fff"
         emissiveIntensity={1.5}
         transparent
         opacity={0.8}
@@ -77,11 +77,11 @@ function FloatingEyes() {
     <>
       <mesh position={[-2, 1.5, -3]}>
         <sphereGeometry args={[0.15, 32, 32]} />
-        <meshStandardMaterial emissive="red" emissiveIntensity={3} />
+        <meshStandardMaterial emissive="white" emissiveIntensity={3} />
       </mesh>
       <mesh position={[-1.6, 1.5, -3]}>
         <sphereGeometry args={[0.15, 32, 32]} />
-        <meshStandardMaterial emissive="red" emissiveIntensity={3} />
+        <meshStandardMaterial emissive="white" emissiveIntensity={3} />
       </mesh>
     </>
   )
